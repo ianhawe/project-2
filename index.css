@@ -9,26 +9,37 @@ body {
 }
 /* This forces the footer to go to the bottom of the page */
 .main-content {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-grow: 1;
 }
 
-/* removing  some default properties*/
-ul {
+header ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 0;
 }
+
 header ul li {
   list-style-type: none;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 600px) {
+  header ul {
+    flex-direction: row;
+    align-self: center;
+  }
+  .main-content {
+    flex-direction: row;
+  }
+
+}
+
+@media (min-width: 1000px) {
   header {
     display: flex;
     justify-content: space-between;
-  }
-
-  header ul {
-    display: flex;
-    flex-direction: row;
-    align-self: center;
   }
 }
