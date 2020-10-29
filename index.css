@@ -1,0 +1,14 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+}
+header h1{
+
+}
+header ul{
+
+}
