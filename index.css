@@ -5,12 +5,11 @@ body {
   text-align: center;
   width: 80%;
   margin: auto;
-  border: blue 1px solid;
   min-height: 100vh;
 }
 /* This forces the footer to go to the bottom of the page */
-.main-content{
-    flex:1;
+.main-content {
+  flex: 1;
 }
 
 /* removing  some default properties*/
@@ -21,22 +20,15 @@ header ul li {
   list-style-type: none;
 }
 
-
 @media (min-width: 750px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
 
-
-    header{
-        display: flex;
-        justify-content: space-between;
-
-    }
-
-    header ul{
-        display: flex;
-        flex-direction: row;
-        align-self: center;
-    }
-
-
-
+  header ul {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+  }
 }
